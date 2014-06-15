@@ -1,0 +1,29 @@
+extends layout
+
+block content
+	div.hero-unit
+		if(user)
+			h1 Activiti-UI
+		else
+			h1 Welcome
+			h2 Activiti-UI
+
+	-if(user)
+		div.row
+			div.span4
+				div.step-content
+					h2 Header
+					p Text
+					a(href='/upload').btn.btn-primary Button
+
+			div.span4
+				div.step-content
+					h2 Header
+					p Text
+					a(href = '/buildUI').btn.btn-primary Button
+
+			div.span4
+				div.step-content
+					h2 Header
+					p Text
+					a(href='/processes').btn.btn-primary Button

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+			form.from-horizontal(method = "post")
+				fieldset
+				legend Register
+				div.control-group
+					label.control-label(for="username") Username
+					div.controls
+						input.input-xlarge#username(type = "text", name = "username")
+						p.help-block Username for account
+				div.control-group
+					label.control-label(for = "password") Password
+					div.controls
+						input.input-xlarge#password(type = "password", name="password")
+				div.control-group
+					label.control-label(for = "password-repeat") Password Confirm
+					div.controls
+						input.input-xlarge#password-repeat(type="password", name= "password-repeat")
+				div.form-actions
+					button.btn.btn-primary(type="submit") Submit
